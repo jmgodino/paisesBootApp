@@ -8,13 +8,11 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 @SpringBootApplication
-@EnableWebMvc
 @EnableMongoRepositories
 public class PaisesMain extends AbstractMongoConfiguration {
 	

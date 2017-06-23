@@ -21,8 +21,8 @@ public class PaisesMain extends AbstractMongoConfiguration {
 	@Value("${mongodb.url}")
 	private String mongoURL;
 	
-	@Value("${mongodb.collection}")
-	private String mongoCollection;
+	@Value("${mongodb.database}")
+	private String mongoDatabase;
 
 	public static void main(String[] args) {
 		SpringApplication.run(PaisesMain.class, args);
@@ -30,7 +30,7 @@ public class PaisesMain extends AbstractMongoConfiguration {
 
 	@Override
 	public String getDatabaseName() {
-		return mongoCollection;
+		return mongoDatabase;
 	}
 
 	@Override
